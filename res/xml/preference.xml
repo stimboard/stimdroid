@@ -21,9 +21,19 @@
             android:negativeButtonText="Annuler"
             android:summary="adresse serveur"
             android:title="Adresse serveur"
+            android:inputType="textUri"/>
+        	<!-- android:defaultValue=""  --> 
+        	<EditTextPreference
+            android:dialogTitle="port"
+            android:key="editTextPort"
+            android:positiveButtonText="Valider"
+            android:negativeButtonText="Annuler"
+            android:summary="port"
+            android:title="Port"
             android:inputType="number"/>
         	<!-- android:defaultValue=""  -->           
     </PreferenceCategory>
+                  
     
 </PreferenceScreen>
 

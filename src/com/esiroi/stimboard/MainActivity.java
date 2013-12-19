@@ -172,8 +172,13 @@ public class MainActivity extends Activity {
 		}  
         
         finally {
+        	
         	final Type listScheduleModelType = new TypeToken<List<ScheduleModel>>(){}.getType();
-            return (List<ScheduleModel>) new Gson().fromJson(oS.toString(), listScheduleModelType);
+            //return (List<ScheduleModel>) new Gson().fromJson(oS.toString(), listScheduleModelType);
+        	Log.i("Preferences","json: "+PreferenceManager.getDefaultSharedPreferences(this).getString("json", "default"));
+        	if(!PreferenceManager.getDefaultSharedPreferences(this).getString("json", "default").isEmpty())
+        	return (List<ScheduleModel>) new Gson().fromJson(oS.toString(), listScheduleModelType);
+        	else return (List<ScheduleModel>) new Gson().fromJson(oS.toString(), listScheduleModelType);
         }
          
         

@@ -19,7 +19,7 @@ public class STIMBoardServiceOld extends IntentService {
 	
 	public STIMBoardServiceOld() {
 		super("");
-		NM=new NetworkManager(ADDR, PORT);
+		//NM=new NetworkManager(ADDR, PORT);
 	}
 
 	@Override
