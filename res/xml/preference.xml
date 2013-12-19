@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Etudiant" >
+        <EditTextPreference
+            android:dialogTitle="Numéro etudiant"
+            android:key="editTextPref"
+            android:positiveButtonText="Valider"
+            android:negativeButtonText="Annuler"
+            android:summary="Id_Etudiant"
+            android:title="Identifiant"
+            android:inputType="number"/>
+        	<!-- android:defaultValue=""  -->           
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Serveur" >
+        <EditTextPreference
+            android:dialogTitle="Addresse serveur"
+            android:key="editTextServ"
+            android:positiveButtonText="Valider"
+            android:negativeButtonText="Annuler"
+            android:summary="adresse serveur"
+            android:title="Adresse serveur"
+            android:inputType="number"/>
+        	<!-- android:defaultValue=""  -->           
+    </PreferenceCategory>
+    
+</PreferenceScreen>
+
